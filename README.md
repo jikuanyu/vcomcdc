@@ -51,7 +51,7 @@ rest.bind-address: 0.0.0.0
 下载源码进行编译：
 ```
 cd vcom-client-cdc
-mvn clean  -DskipTests
+mvn clean  package -DskipTests
 ```
 编译好的jar为vcom-client-cdc-1.0.0.jar 
 
