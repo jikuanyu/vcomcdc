@@ -52,7 +52,7 @@ rest.bind-address: 0.0.0.0
 ```
 cd vcom-client-cdc
 mvn clean  -DskipTests
-``
+```
 编译好的jar为vcom-client-cdc-1.0.0.jar 
 
 程序jar放置的位置为：/home/admin/cdcconfig/vcom-client-cdc-1.0.0.jar
