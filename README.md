@@ -42,12 +42,17 @@ rest.bind-address: 0.0.0.0
 
 ## 运行程序：
 
-$ /home/admin/flink/bin/flink run -d -c com.zzvcom.cdc.mysql.MySqlDataStreamJob /home/admin/cdcconfig/vcom-client-cdc-1.0.0.jar /home/admin/cdcconfig/TestMysqlToJdbc.properties
+
 
 
 
 本例子中flink安装在/home/admin/下面：
 
+下载源码进行编译：
+```
+cd vcom-client-cdc
+mvn clean  -DskipTests
+``
 编译好的jar为vcom-client-cdc-1.0.0.jar 
 
 程序jar放置的位置为：/home/admin/cdcconfig/vcom-client-cdc-1.0.0.jar
@@ -55,7 +60,7 @@ $ /home/admin/flink/bin/flink run -d -c com.zzvcom.cdc.mysql.MySqlDataStreamJob 
 命令行参数为配置文件的路径：/home/admin/cdcconfig/TestMysqlToJdbc.properties
 
 
-
+$ /home/admin/flink/bin/flink run -d -c com.zzvcom.cdc.mysql.MySqlDataStreamJob /home/admin/cdcconfig/vcom-client-cdc-1.0.0.jar /home/admin/cdcconfig/TestMysqlToJdbc.properties
 
 
 TestMysqlToJdbc.properties的配置信息如下：
