@@ -3,6 +3,7 @@
  使用flinkcdc stream api进行数据库同步的工具：
 
 目前实现了mariadb到mariadb的测试。
+oceanbase 到mariadb的同步，由于oceanbase cdc api还不稳定则进行的简单的实现。
 
 
 
